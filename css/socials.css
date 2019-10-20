@@ -1,0 +1,75 @@
+.socials {
+	text-align: center;
+	font-size: 1.8em;
+	color: #333;
+}
+
+.socials a {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.3em;
+	margin-left: 0.6em;
+	margin-top: 0.4em;
+	background-color: white;
+	border-radius: 0.2em;
+	border: 2px solid #ccc;
+
+	transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+
+.socials a div {
+	height: 0.9em;
+	width: 0.9em;
+
+	transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+
+.socials a:hover {
+	border-width: 0;
+}
+
+.socials a:hover div {
+	height: 1.04em;
+	width: 1.04em;
+}
+
+
+
+.socials a.vk div {
+	background: url(../img/socials/vk.svg) no-repeat 50% 50%;
+	background-size: contain;
+}
+
+.socials a.in div {
+	background: url(../img/socials/in.svg) no-repeat 50% 50%;
+	background-size: contain;
+}
+
+.socials a.vk:hover div {
+	background-image: url(../img/socials/vk_white.svg);
+}
+
+.socials a.in:hover div {
+	background-image: url(../img/socials/in_white.svg);
+}
+
+.socials a.vk:hover {
+	background-color: #4d7198;
+}
+
+.socials a.in:hover {
+	background-image: url(../img/socials/in_back.jpg);
+	background-size: cover;
+}
+
+#imgloader {
+	width: 0;
+	height: 0;
+	background-image: url(../img/socials/in_back.jpg);
+    background-image: url(../img/socials/in_white.svg);
+    background-image: url(../img/socials/vk_white.svg);
+}

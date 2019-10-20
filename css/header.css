@@ -1,0 +1,123 @@
+header {
+    position: relative;
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 3em;
+    padding: 2em 9%;
+    background: white;
+    color: #333;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ddd;
+    cursor: default;
+}
+
+header h1 {
+    font-weight: 400;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+header nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 2em;
+    font-size: 1.1em;
+    transition: opacity .5s ease;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+header nav a:hover {
+    opacity: 0.5;
+}
+
+header h1,
+header nav {
+    display: inline-block;
+}
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+header h1 {
+    height: 100%;
+}
+ 
+header h1::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;  
+    height: 100%;
+}
+
+header nav input {
+    display: none;
+}
+
+header nav label {
+    display: none;
+    cursor: pointer;
+}
+
+header nav label img {
+    height: 1.3em;
+    padding: 0.6em;
+    border: 2px solid #ccc;
+    border-radius: 0.2em;
+}
+
+header nav label.disable img.close {
+    display: none;
+} 
+
+header nav label.disable img.open {
+    display: block;
+} 
+
+header nav label.active img.close {
+    display: block;
+} 
+
+header nav label.active img.open {
+    display: none;
+} 
+
+
+
+
+
+header.short nav span {
+    position: absolute;
+    display: none;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    margin-top: 1px;
+    z-index: 1;
+}
+
+header.short nav a {
+    display: block;
+    margin-right: 0;
+    padding: 2em 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header.short nav {
+    vertical-align: top;
+}
+
+header.short nav label {
+    display: block;
+} 
